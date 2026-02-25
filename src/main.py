@@ -15,12 +15,12 @@ from article_cache import ArticleCache
 async def main():
     print('🤖 WellRead Bot Starting...')
 
-    # Load environment variables
-    ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
-    OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
-    SLACK_TOKEN = os.environ.get('SLACK_BOT_TOKEN')
-    SLACK_CHANNEL = os.environ.get('SLACK_CHANNEL')
-    SLACK_WEBHOOK = os.environ.get('SLACK_WEBHOOK')
+    # Load environment variables (strip to handle secrets with trailing whitespace/newlines)
+    ANTHROPIC_API_KEY = (os.environ.get('ANTHROPIC_API_KEY') or '').strip() or None
+    OPENAI_API_KEY = (os.environ.get('OPENAI_API_KEY') or '').strip() or None
+    SLACK_TOKEN = (os.environ.get('SLACK_BOT_TOKEN') or '').strip() or None
+    SLACK_CHANNEL = (os.environ.get('SLACK_CHANNEL') or '').strip() or None
+    SLACK_WEBHOOK = (os.environ.get('SLACK_WEBHOOK') or '').strip() or None
 
     if not ANTHROPIC_API_KEY:
         print('❌ ANTHROPIC_API_KEY environment variable is required')
