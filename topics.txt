@@ -3,23 +3,31 @@
 # The bot will prioritize posts related to these topics
 # Lines starting with # are comments.
 
-ai agents
-agent evaluation and benchmarking
-reasoning models
-reinforcement learning
-metagenomics
-protein discovery
-insertion sequences
-mobile genetic elements
-recombinases
-protein language models
-dna language models
-protein folding
-genome engineering
-vault particles
-genome engineering
-gene therapy
-genomic language models
-ribosomal frameshifts
-genome design
-microbiome
+protein language model
+pLM embeddings
+ESM protein model
+protein representation learning
+protein sequence modeling
+protein foundation model
+spatial transcriptomics
+spatial proteomics
+spatial omics foundation model
+tissue spatial analysis
+multiplexed imaging analysis
+spatial gene expression
+perturbation prediction
+virtual cell model
+in silico perturbation
+CRISPR screen prediction
+gene perturbation modeling
+cellular response prediction
+counterfactual cell state
+perturbation foundation model
+protein secretion prediction
+protein localization prediction
+signal peptide prediction
+subcellular localization
+secretory pathway prediction
+protein sorting prediction
+transmembrane topology prediction
+protein trafficking
